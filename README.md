@@ -1,6 +1,6 @@
 # web-application-per-lido-balneare-java
 
-Progettazione e realizzazione di una Web Application per la gestione di un lido balneare (Prof. La Cascia)
+Progettazione e realizzazione di una Web Application per la gestione di un lido balneare in Java su Eclipse (Prof. La Cascia)
 
 Front-end: 
  - Homepage con registrazione e login
