@@ -11,4 +11,5 @@ Back-end:
  - Scherma riepilogo guadagni
  - Aggiunta/rimozione personale
  - Annulla prenotazione
+
 Realizzato con: JavaBean, Servlet, JDBC, j_security_check
