@@ -1,0 +1,119 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+}
+
+table td {
+	
+	padding: 20px;
+	text-align: center;
+}
+
+span {
+	
+	margin: 10px;
+}
+
+.form{
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #1b70a6;
+    color: white;
+    width: 60%;
+}
+
+.form > label{
+    display: block;
+    margin: 40px 0 10px
+}
+
+.form input{
+   background: none;
+   border: none;
+   border-bottom: 1px solid white;
+   color: white;
+   width: 100%;
+
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.486)
+}
+.fieldset{
+    border: 2px solid  #f2d4ae;
+    padding: 20px;
+    margin-top: 40px
+}
+
+.fieldset label
+{
+    display: inline-block;
+}
+
+.fieldset input{
+    width: fit-content;
+    margin-right: 50px;
+}
+
+.button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1b70a6;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 20px 0;
+    display: block
+}
+
+.form .button[type="submit"],
+.form .button[type="button"]{
+    margin-top: 30px;
+    border: 1px solid white;
+    width: fit-content
+}
+
+.form > a{
+	
+	color: white;
+    text-decoration: none;
+}
+
+.form > a:visited{
+	
+	color: white;
+    text-decoration: none;
+}
+
+.form > a:hover{
+	
+	color: white;
+    text-decoration: underline;
+}
+
+p > a{
+    color: black;
+    text-decoration: none;
+}
+p > a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+p > a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+p > i{
+	
+	margin-right: 10px;
+}
+
+
+
+     
+

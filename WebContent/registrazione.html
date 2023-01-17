@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registrazione</title>
+<link rel="stylesheet" type= "text/css" href="css/style.css" />
+<link rel="stylesheet" type= "text/css" href="css/customstyle.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+<script type="text/javascript" src="js/registrazione.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/3352ada0d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1> Inserisci i tuoi dati personali </h1>
+	<form id= "form-register" class="form" name="Registrazione" method="POST">
+			<label for="username">Username:</label>
+			<input id="username" type="text" name="username" required="required" placeholder="Inserisci Username" 
+			pattern="[a-zA-Z0-9_-]{3,}" title="Minimo 3 caratteri, massimo 8. Lettere maiuscole, minuscole, numeri o _-"/> <br />
+			<label for="nome">Nome:</label>
+			<input id="nome" type="text" name="nome" required="required" placeholder="Inserisci Nome" pattern="[A-Z]{1}[a-zA-Z]{2,}" 
+				title="Inserire solo lettere, minimo 3 caratteri e prima lettera maiuscola. Se avete più nomi, inseritene solo uno" /> <br />
+			<label for="cognome">Cognome:</label>
+			<input id="cognome" type="text" name="cognome" required="required" placeholder="Inserisci Cognome" pattern="[A-Z]{1}[a-zA-Z]{2,}" 
+				title="Inserire solo lettere, minimo 3 caratteri e prima lettera maiuscola. Se avete più nomi, inseritene solo uno" /> <br />
+			<label for="email">Email:</label>
+			<input id ="email" type="email" name="email" required="required" placeholder="esempio@abc.com" 
+			pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" /> <br />
+			<label for="pwd">Password:</label>
+			<input id ="pwd" type="password" name="pwd" required="required" placeholder="Inserisci Password" pattern ="[a-zA-Z0-9_-]{3,}" 
+				title="Minimo 3 caratteri, Inserire solo lettere maiuscole, minuscole, numeri o _-"/> <br />
+			<label for="cpwd">Conferma Password:</label>
+			<input id ="cpwd" type="password" name="cpwd" required="required" placeholder="Conferma Password" /> <br /> <br />
+			<input class="button" type="submit" value="Registrati" />
+			<div id="response"></div>
+		</form>
+		<p><i class="fas fa-arrow-left"></i><a href="index.html">Torna alla home page</a></p>
+</body>
+</html>

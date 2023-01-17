@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>madoniainsinna</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+	 <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>
+
+	<error-page>
+    	<error-code>403</error-code>
+    	<location>/WEB-INF/accessdenied.jsp</location>
+	</error-page>
+
+	<error-page>
+    	<error-code>405</error-code>
+    	<location>/WEB-INF/errorget.jsp</location>
+	</error-page>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Utente</web-resource-name>
+			<url-pattern>/areaprotetta/utente/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>U</role-name>
+		</auth-constraint>
+	</security-constraint>
+		<security-role>
+			<role-name>U</role-name>
+		</security-role>
+		
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Bagnino</web-resource-name>
+			<url-pattern>/areaprotetta/bagnino/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>B</role-name>
+		</auth-constraint>
+	</security-constraint>
+		<security-role>
+			<role-name>B</role-name>
+		</security-role>
+		
+		<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Amministratore</web-resource-name>
+			<url-pattern>/areaprotetta/admin/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>A</role-name>
+		</auth-constraint>
+	</security-constraint>
+		<security-role>
+			<role-name>A</role-name>
+		</security-role>
+		
+		<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Cuoco</web-resource-name>
+			<url-pattern>/areaprotetta/cuoco/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>C</role-name>
+		</auth-constraint>
+	</security-constraint>
+		<security-role>
+			<role-name>C</role-name>
+		</security-role>
+		
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/WEB-INF/login.jsp</form-login-page>
+			<form-error-page>/WEB-INF/login.jsp?show=logerror</form-error-page>
+		</form-login-config>
+	</login-config>	
+</web-app>
