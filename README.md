@@ -5,6 +5,7 @@ Front-end:
  - Homepage con registrazione e login
  - Autenticazione per admin e dipendenti
  - funzionalità di prenotazione e ordinazione
+ 
 Realizzato con: HTML, CSS, JSP, jQuery
 Back-end:
  - Scherma riepilogo guadagni
